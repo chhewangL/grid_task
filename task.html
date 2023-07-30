@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bck-color: #1E293B;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        color: whitesmoke;
+        padding-left: 20px;
+      }
+
+
+
+      header {
+        padding: 10px 20px;
+        height: 50px;
+        background-color: var(--bck-color);
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .display {
+        height: 250px;
+        background-color: var(--bck-color);
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20px;
+      }
+
+      .dis-img {
+        height: 300px;
+
+
+      }
+
+      .dis-img img {
+
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+
+      }
+
+
+      .dis-info {
+        padding: 10px 20px;
+        line-height: 2.5rem;
+        align-self: center;
+      }
+
+      .dis-info input {
+        list-style: none;
+        border-radius: 15px;
+        width: 40%;
+        height: 30px;
+      }
+
+      .courses {
+        margin: 30px 30px;
+        padding: 40px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+      }
+
+      .courses img {
+        width: 45px;
+      }
+
+      .cards {
+        margin: 30px 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      .card {
+
+        background-color: var(--bck-color);
+        color: whitesmoke;
+        padding: 10px 10px;
+        border-radius: 10px;
+      }
+
+      .card-img img {
+        width: 80px;
+        height: 80px;
+        clip-path: circle();
+      }
+
+      .card-head {
+        display: flex;
+        align-items: center;
+        /* background-color: var(--bck-color); */
+      }
+
+      .card-info {
+        padding: 10px 10px;
+      }
+
+      /* .card-details {
+        background-color: var(--bck-color);
+      } */
+      @media (max-width:720px) {
+        header {
+          height: 70px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+        }
+
+        nav {
+          margin: 3px 0px;
+        }
+
+        .display {
+          height: 550px;
+          background-color: var(--bck-color);
+          color: whitesmoke;
+          display: grid;
+          grid-template-columns: 1fr;
+          column-gap: 20px;
+        }
+
+        .courses {
+          margin: 30px 30px;
+          padding: 40px 0px;
+          display: grid;
+          grid-template-columns: 1fr;
+          row-gap: 10px;
+        }
+
+        .course {
+          width: 100%;
+        }
+
+        .cards {
+          margin: 30px 30px;
+          display: flex;
+          flex-direction: column;
+          column-gap: 5px;
+
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Skillz</h1>
+      </div>
+      <nav>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+    <div class="display">
+      <div class="dis-info">
+        <h1>Learn any digital skill of your choice today</h1>
+        <h2>Over 30000 students currently learn with us</h2>
+        <form action="#">
+          <input type="email" name="email" placeholder="Enter your Email address">
+          <button>Start Learning</button>
+        </form>
+        <p>Try out our free courses.No risk, no credit card required</p>
+
+      </div>
+      <div class="dis-img">
+        <img
+          src="https://images.unsplash.com/photo-1690342823606-4d8d3d799872?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+
+      </div>
+    </div>
+    <div class="courses">
+      <div class="course">
+        <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/576/folder-open-64.png" alt="">
+        <h2>Over 300 available courses</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptatibus est eos, numquam, officiis
+          sunt harum iure unde optio, esse voluptatum? Ipsa modi libero suscipit ea laboriosam neque ex nisi perferendis
+          esse, vitae sequi quidem vero at atque doloremque. Consectetur alias vel esse enim non illo eaque officiis ad
+          vitae.</p>
+
+      </div>
+      <div class="course">
+        <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/576/folder-open-64.png" alt="">
+        <h2>Over 300 available courses</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptatibus est eos, numquam, officiis
+          sunt harum iure unde optio, esse voluptatum? Ipsa modi libero suscipit ea laboriosam neque ex nisi perferendis
+          esse, vitae sequi quidem vero at atque doloremque. Consectetur alias vel esse enim non illo eaque officiis ad
+          vitae.</p>
+
+      </div>
+      <div class="course">
+        <img src="https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/576/folder-open-64.png" alt="">
+        <h2>Over 300 available courses</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptatibus est eos, numquam, officiis
+          sunt harum iure unde optio, esse voluptatum? Ipsa modi libero suscipit ea laboriosam neque ex nisi perferendis
+          esse, vitae sequi quidem vero at atque doloremque. Consectetur alias vel esse enim non illo eaque officiis ad
+          vitae.</p>
+
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626818590138-c1e906bf29be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmwlMjBhbG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Ducimus, magni?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1621317911081-f123294e86c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybCUyMGFsb25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quibusdam repellendus quam ullam ipsum, illo nemo facere in atque veniam dicta
+            error provident aut eaque incidunt illum, magnam, dolorem perferendis impedit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626818590138-c1e906bf29be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmwlMjBhbG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1621317911081-f123294e86c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybCUyMGFsb25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quas, voluptatum?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626818590138-c1e906bf29be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmwlMjBhbG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aut dolorem assumenda temporibus ad aliquid. Iste?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626818590138-c1e906bf29be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmwlMjBhbG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Ratione, doloribus quae quas quisquam dolore magnam error ipsam explicabo qui
+            hic?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626818590138-c1e906bf29be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmwlMjBhbG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Sunt, nam.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626818590138-c1e906bf29be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdpcmwlMjBhbG9uZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+          </div>
+          <div class="card-info">
+            <h3>Ryan Florence</h3>
+            <h4>Remix & React Training</h4>
+
+          </div>
+
+        </div>
+        <div class="card-details">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, impedit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Cumque doloremque alias praesentium veniam soluta accusantium ut suscipit
+            quidem harum assumenda.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
